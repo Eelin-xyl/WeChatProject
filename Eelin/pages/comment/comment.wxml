@@ -1,0 +1,37 @@
+<view class="header" width="100%">
+    <view class='td'>{{content.ttl}}</view>
+    <text>\n</text>
+    <view class="ctt">{{content.dcp}}</view>
+</view>
+
+<text>\n</text>
+
+<view width="100%">
+  <scroll-view scroll-y='true'>
+   
+    <view class="ctt" wx:for="{{cmt}}" wx:for-item="i">
+      <view class='out'>
+        {{i}}
+      </view>
+      <text>\n</text>
+      <text>\n</text>
+    </view>
+
+  </scroll-view>
+</view>
+
+
+<!-- 更新 -->
+<!-- <form bindsubmit="submit">
+<view class="bot grid">
+  <input class="input_base col-1" name="cmt" placeholder="Say something"></input>
+  <label class="title col-0 box"><button class="bt" form-type="submit">Send</button></label>
+</view>
+</form> -->
+
+<view class="message">
+<form bindreset="cleanInput" class="sendMessage">
+        <input type="text" placeholder="Please input.." value="{{massage}}" bindinput='bindChange'></input>
+        <button type="primary" bindtap='send' formType="reset" size="small" button-hover="blue" style="width:30%">Send</button>
+</form>
+</view>

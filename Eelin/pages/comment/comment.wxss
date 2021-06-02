@@ -1,0 +1,277 @@
+.header {
+  border: rgb(167, 167, 167) 3rpx solid;
+  height: 80px;
+}
+
+.page-section-spacing{
+margin-top: 10rpx;
+}
+
+.scroll-view-item{
+height: 200rpx;
+}
+
+.dep{font-size: larger;
+color:rgb(23, 90, 233);
+display: flex;
+vertical-align: center; 
+justify-content: center;
+font-weight: bold;
+font-style: italic;
+}
+
+.scrBox2{width: 100px; height: 20px; margin-inline: auto;color:rgb(116, 116, 116);flex:0 0 10px;}
+
+.ipt{border:1px solid #dddddd; padding:0 10rpx;box-sizing: border-box;width: 250px; margin-inline: auto;}
+
+.icon-box{display: flex;justify-content: center;}
+.myhead {
+height: 450 rpx;
+width: 100%;
+}
+.image_head{
+width: 100%;
+height: 100%;
+}
+
+.scroll-view_H{
+white-space: nowrap;
+}
+.scroll-view-item_H{
+display: inline-block;
+width: 100%;
+height: 150rpx;
+}
+
+.out {
+width: 100%;
+justify-content: space-around;
+border: gray 1rpx solid;
+height: 50px;
+}
+
+/**设置高度就会出现纵向滚动条**/
+.out scroll-view{
+  height: 180px;
+}
+
+.out .item {
+height: 100px;
+margin: 10px;
+}
+
+.tr {
+display: flex;
+width: 100%;
+justify-content: center;
+height: 3rem;
+align-items: center;
+}
+
+.cl {
+  color: rgb(37, 228, 139);
+}
+
+.td {
+  font-size: 25px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  /* height: 5rem; */
+  align-items: center;
+  color:rgb(23, 90, 233);
+  font-weight: bold;
+  }
+
+.ctt {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+
+.th {
+width: 100%;
+justify-content: center;
+display: flex;
+height: 3rem;
+align-items: center;
+}
+
+.u-wrp-bnr {
+width: 100%;
+height: 400rpx;
+display: block;
+position: relative;
+top: 0rpx;
+background: #f0f0f0;
+}
+.u-img-slide {
+width: 100%;
+height: inherit;
+}
+.background-image{
+height : 100%;
+position: absolute;
+width: 100%;
+left: 0px;
+top: 385rpx;
+z-index: -1;
+}
+
+.add_icon{
+  position: fixed;
+  width:50px;
+  height:55px;
+  bottom: 30px;
+  right: 20px;
+}
+
+.drawer_box {
+  width: 650rpx;
+  height: 480rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 1001;
+  background: #fafafa;
+  margin: -150px 50rpx 0 50rpx;
+  border-radius: 3px;
+  border: 4rpx solid #ccc;
+}
+
+.drawer_title {
+  padding: 15px;
+  font: 20px "microsoft yahei";
+  text-align: center;
+}
+
+.ttl {
+  font-size: larger;
+  color: rgb(23, 90, 233);
+  display: flex;
+  font-weight: bold;
+}
+
+.grid {
+  width: 100%;
+  display: -webkit-box;
+  display: box;
+  height: 60px;
+}
+
+.drawer_content {
+  height: 250px;
+  overflow-y: scroll; /*超出父盒子高度可滚动*/
+}
+
+.title {
+  height: 30px;
+  line-height: 30px;
+  width: 160rpx;
+  text-align: center;
+  display: inline-block;
+  font: 300 28rpx/30px "microsoft yahei";
+}
+
+.col-0 {
+  -webkit-box-flex: 0;
+  box-flex: 0;
+}
+
+.col-1 {
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  display: flex;
+}
+
+.bt { 
+  display: flex;
+ }
+
+.bt1 {
+  border: 2rpx solid #ccc;
+  font: 14px "microsoft yahei";
+  width: 180rpx;
+  background-color: rgba(168, 168, 168, 0.76);
+}
+
+.bt2 {
+  border: 2rpx solid #ccc;
+  font: 14px "microsoft yahei";
+  width: 180rpx;
+  background-color: rgb(47, 255, 92);
+}
+
+.box {
+  border: 2rpx solid #ccc;
+  font: 14px "microsoft yahei";
+  width: 180rpx;
+}
+
+.input_base {
+  border: 2rpx solid #ccc;
+  height: 30px;
+  line-height: 30px;
+}
+
+.bot {
+  /* padding-bottom: 0%; */
+  bottom: 30px;
+  position: fixed;
+  width: 100%;
+}
+
+input {
+  font: 12px "microsoft yahei";
+  background: #fff;
+  color: #000;
+}
+
+
+/* 更新 */
+.message{
+  display: flex;
+  position: fixed;
+  bottom:0;
+  width: 100%;
+}
+
+.sendMessage{
+  display: block;
+  width: 100%;
+  height: 80rpx;
+  padding: 10rpx 0rpx; 
+  background-color: #fff; 
+  border-top: 2rpx solid #eee;
+  border-bottom: 2rpx solid #eee; 
+  z-index:3;  
+}
+.sendMessage input{
+   float:left;
+   width: 55%;
+   height: 100%;
+   line-height: 80rpx;
+   border-bottom: 1rpx solid #ccc;
+   padding:0 0rpx; 
+   font-size: 35rpx;
+   color: #666;
+}
+.sendMessage view{
+  display: inline-block; 
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx; 
+  font-size: 60rpx; 
+  text-align: center;
+  color: #999;
+  border: 1rpx solid #ccc;
+  border-radius: 50%;
+  margin-left: 10rpx;
+} 
+.sendMessage button {
+  float: right;
+  font-size: 35rpx;
+}

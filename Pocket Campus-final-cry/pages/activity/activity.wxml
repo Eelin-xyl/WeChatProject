@@ -1,0 +1,35 @@
+<!--pages/activity/activity.wxml-->
+<view class='search'>
+  <input type='text' placeholder='Please input' confirm-type='search' value="{{inputValue}}" bindinput='inputBind'
+    bindconfirm='query'></input>
+  <image class="" src='/images/search.png' bindtap='query'></image>
+</view>
+<text class="cal">All the activites</text>
+
+<!-- <scroll-view scroll-y >
+  <block wx:for="{{activities}}">
+    <view width="100%">{{item.name}}</view>
+  </block>
+</scroll-view>  -->
+
+<view width="100%">
+  <scroll-view scroll-y>
+  <block wx:for="{{activities}}">
+    <view class='out'>
+      <view class="topic">
+        <view class="ttl" catchtap="navigateTo"  data-title='{{item.name}}'>
+          <view>-</view>
+          {{item.name}}
+        </view>
+        <view class="ctt">{{item.location}}</view>
+      </view>
+      <text>\n</text>
+    </view>
+  </block>
+  </scroll-view>
+</view>
+
+<!--icon-->>
+<view bindtap='addActivity'>
+  <image class="add_icon" src="../../images/plus.png"></image>
+</view>

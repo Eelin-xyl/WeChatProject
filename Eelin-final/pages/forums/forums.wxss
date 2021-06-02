@@ -1,0 +1,253 @@
+.message{
+  display: flex;
+  /* position: fixed; */
+  /* bottom:0; */
+  width: 100%;
+  height: 30px;
+  border: #000 double 2px;
+  /* background-color: #dddddd; */
+}
+
+
+.header {
+  border: rgb(167, 167, 167) 3rpx solid;
+  height: 120px;
+}
+
+.page-section-spacing{
+margin-top: 10rpx;
+}
+
+.scroll-view-item{
+height: 200rpx;
+}
+
+.dep{font-size: larger;
+color:rgb(23, 90, 233);
+display: flex;
+vertical-align: center; 
+justify-content: center;
+font-weight: bold;
+font-style: italic;
+}
+
+.scrBox2{width: 100px; height: 20px; margin-inline: auto;color:rgb(116, 116, 116);flex:0 0 10px;}
+
+.ipt{border:1px solid #dddddd; padding:0 10rpx;box-sizing: border-box;width: 250px; margin-inline: auto;}
+
+.icon-box{display: flex;justify-content: center;}
+.myhead {
+height: 450 rpx;
+width: 100%;
+}
+.image_head{
+width: 100%;
+height: 100%;
+}
+
+.scroll-view_H{
+white-space: nowrap;
+}
+.scroll-view-item_H{
+display: inline-block;
+width: 100%;
+height: 150rpx;
+}
+
+.out {
+width: 100%;
+/* justify-content: space-around; */
+}
+
+/**设置高度就会出现纵向滚动条**/
+.out scroll-view{
+  height: 180px;
+}
+
+.out .item {
+height: 100px;
+margin: 10px;
+}
+
+.tr {
+display: flex;
+width: 100%;
+justify-content: center;
+height: 3rem;
+align-items: center;
+}
+
+.cl {
+  color: rgb(37, 228, 139);
+}
+
+.td {
+  border: rgb(167, 167, 167) 3rpx solid;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  color:rgb(23, 90, 233);
+  }
+
+.th {
+width: 100%;
+justify-content: center;
+display: flex;
+height: 3rem;
+align-items: center;
+}
+
+.u-wrp-bnr {
+width: 100%;
+height: 400rpx;
+display: block;
+position: relative;
+top: 0rpx;
+background: #f0f0f0;
+}
+.u-img-slide {
+width: 100%;
+height: inherit;
+}
+.background-image{
+height : 100%;
+position: absolute;
+width: 100%;
+left: 0px;
+top: 385rpx;
+z-index: -1;
+}
+
+.add_icon{
+  position: fixed;
+  width:50px;
+  height:50px;
+  bottom: 30px;
+  right: 40px;
+}
+
+.drawer_box {
+  width: 650rpx;
+  height: 480rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 1001;
+  background: #fafafa;
+  margin: -150px 50rpx 0 50rpx;
+  border-radius: 3px;
+  border: 4rpx solid #ccc;
+}
+
+.drawer_title {
+  padding: 15px;
+  font: 20px "microsoft yahei";
+  text-align: center;
+}
+
+.topic {
+  border:rgb(192, 186, 186) 7rpx solid;
+  /* margin: 5rpx; */
+}
+
+.ttl {
+  font-size: larger;
+  color: rgb(23, 90, 233);
+  display: flex;
+  font-weight: bold;
+  position: relative;
+}
+
+.grid {
+  display: -webkit-box;
+  display: box;
+}
+
+.drawer_content {
+  height: 250px;
+  overflow-y: scroll; /*超出父盒子高度可滚动*/
+}
+
+.title {
+  height: 30px;
+  line-height: 30px;
+  width: 160rpx;
+  text-align: center;
+  display: inline-block;
+  font: 300 28rpx/30px "microsoft yahei";
+}
+
+.col-0 {
+  -webkit-box-flex: 0;
+  box-flex: 0;
+}
+
+.col-1 {
+  -webkit-box-flex: 1;
+  box-flex: 1;
+}
+
+.bt { 
+  display: flex;
+ }
+
+.bt1 {
+  border: 2rpx solid #ccc;
+  font: 14px "microsoft yahei";
+  width: 180rpx;
+  background-color: rgba(168, 168, 168, 0.76);
+}
+
+.bt2 {
+  border: 2rpx solid #ccc;
+  font: 14px "microsoft yahei";
+  width: 180rpx;
+  background-color: rgb(47, 255, 92);
+}
+
+.box {
+  border: 2rpx solid #ccc;
+  font: 14px "microsoft yahei";
+  width: 180rpx;
+}
+
+.input_h30 {
+  height: 30px;
+  line-height: 30px;
+}
+
+.input_base {
+  border: 2rpx solid #ccc;
+  padding-left: 10rpx;
+  margin-right: 0rpx;
+}
+
+.top {
+  padding-top: 8px;
+}
+
+input {
+  font: 12px "microsoft yahei";
+  background: #fff;
+  color: #000;
+}
+
+/* .ctt {
+  border:rgb(192, 186, 186) 7rpx solid;
+  margin: 5rpx;
+} */
+
+.like {
+  /* position: fixed; */
+  width:25px;
+  height:25px;
+  /* margin-right: 2px; */
+  /* right: 20px; */
+  /* display: flex;
+  flex-direction: row-reverse; */
+  position: absolute; /* 要约束所在位置的子元素的位置要设置成绝对 */
+  right: 2px;
+}

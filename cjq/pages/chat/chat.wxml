@@ -1,0 +1,89 @@
+<!--pages/chat/chat.wxml-->
+<view class="news" bindtap='outbtn'>
+   <view class="chat-notice" wx:if="{{userInfo}}">System Message: Welcome {{ userInfo.nickName }}</view>
+   <view class="historycon">
+   <scroll-view scroll-y="true" class="history" scroll-top="{{scrollTop}}">
+    
+       <block wx:for="{{newslist}}" wx:for-item="i">
+          <!-- 历史消息 -->
+           <view class="chat-news">
+              <view style="text-align: left;padding-left: 20rpx;">
+                  <image class='new_img' src="{{item.avatarUrl? item.avatarUrl:'images/avator.png'}}"></image>
+                  <text class="name">{{i}}</text>
+              </view>
+          </view>
+          <text>\n</text>
+       </block>
+          <view>{{item.date}}</view>
+          <!--自己的消息  -->
+
+
+
+
+
+
+          <!-- <block wx:for="{{newslist}}" wx:for-item="i">
+           <view class="chat-news">
+              <view style="text-align: left;padding-left: 20rpx;">
+                  <image class='new_img' src="{{item.avatarUrl? item.avatarUrl:'images/avator.png'}}"></image>
+                  <text class="name">{{i}}</text>
+              </view>
+          </view>
+          <text>\n</text>
+       </block> -->
+
+
+
+          <block class="chat-news" wx:for="{{mylist}}" wx:for-item="i">
+              <view style="text-align: right;padding-right: 20rpx;">
+                  <text class="name">{{i+' '}}</text>
+                  <image class='new_img' src="{{userInfo.avatarUrl}}"></image>
+              </view>
+              <text>\n</text>
+          </block> 
+
+
+
+
+          <block wx:for="{{share}}" wx:for-item="j" class="chat-news">
+              <button bindtap="check">{{j.classNum}}</button>
+            <image class='new_img' src="{{userInfo.avatarUrl}}"></image>
+          </block>
+
+
+
+          
+          <!-- 别人的消息  -->
+            <!-- <view class="chat-news" wx:else>
+              <view style="text-align: left;padding-left: 20rpx;">
+                  <image class='new_img' src="{{item.avatarUrl? item.avatarUrl:'images/avator.png'}}"></image>
+                  <text class="name">{{ item.nickName }}</text>
+              </view>
+              <view class='you_left'>
+                  <block wx:if="{{item.type=='text'}}">      
+                    <view class='new_txt'>{{item.content}}</view>
+                  </block>
+                  <block wx:if="{{item.type=='image'}}">
+                    <image class="selectImg" src="{{item.images}}" data-src="{{item.images}}" lazy-load="true" bindtap="previewImg"></image>  
+                  </block>
+              </view>
+          </view>   -->
+       <!-- </block> -->
+   </scroll-view>
+  </view>  
+</view>
+<view id="flag"></view> 
+<!-- 聊天输入 -->
+<view class="message">
+    <form bindreset="cleanInput" class="sendMessage">
+        <input type="text" placeholder="Please input.." value="{{massage}}" bindinput='bindChange'></input>
+         <view class="add" bindtap='share'>+</view> 
+        <button type="primary" bindtap='send' formType="reset" size="small" button-hover="blue" style="width:30%">Send</button>
+    </form>
+    <view class='increased {{aniStyle?"slideup":"slidedown"}}' wx:if="{{increase}}">
+       <view class="image" bindtap='chooseImage'>Photo </view>  
+    </view>
+</view>
+
+
+
